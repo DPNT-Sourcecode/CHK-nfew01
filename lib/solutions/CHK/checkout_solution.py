@@ -6,9 +6,10 @@ def checkout(skus):
     total_checkout = 0
     occurrence_of_A = skus.count('A')
     occurrence_of_B = skus.count('B')
-    
+    occurrence_of_C = skus.count('C')
+    occurrence_of_D = skus.count('D')
 
-    if occurrence_of_A + occurrence_of_B != len(skus):
+    if occurrence_of_A + occurrence_of_B + occurrence_of_C + occurrence_of_D != len(skus):
         return -1
 
     if occurrence_of_A % 3 == 0:
@@ -26,5 +27,13 @@ def checkout(skus):
     else:
         total_checkout += checkout((occurrence_of_B-1)*'B') + 30
 
+    if 'C' in skus:
+        total_checkout += 20
+
+    if 'D' in skus:
+        total_checkout += 15
+
     return total_checkout
+
+print(checkout('AxA')
 
