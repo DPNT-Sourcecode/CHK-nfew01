@@ -14,7 +14,7 @@ def checkout(skus):
             total.append(item[sku])
 
     #dealing with special offers
-
+    
 
 
 print(checkout('A,B,C,D'))
