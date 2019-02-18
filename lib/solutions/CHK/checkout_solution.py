@@ -10,14 +10,14 @@ def checkout(skus):
 
     #dealing with single items
     for sku in skus:
-        if sku in item.keys():
-            total.append(item[sku])
+        if sku == item.keys():
+            total_checkout.append(item[sku])
 
     #dealing with special offers
 
     for sku in skus:
-        if sku in item_special_offers.keys():
-            total.append(item[sku])
+        if sku == item_special_offers.keys():
+            total_checkout.append(item[sku])
 
     return sum(total_checkout)
 
