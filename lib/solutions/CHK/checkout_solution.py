@@ -18,6 +18,6 @@ def checkout(skus):
 
     for sku in skus:
         if sku.startswith('3'):
-            
+
 
 print(checkout('A,B,C,D'))
