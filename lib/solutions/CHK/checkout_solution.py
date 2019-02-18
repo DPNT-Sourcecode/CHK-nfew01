@@ -35,5 +35,4 @@ def checkout(skus):
 
     return total_checkout
 
-print(checkout('AxA')
 
