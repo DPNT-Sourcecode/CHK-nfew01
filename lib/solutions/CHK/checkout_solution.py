@@ -7,7 +7,8 @@ def checkout(skus):
     occurrence_of_A = skus.count('A')
     occurrence_of_B = skus.count('B')
 
-    if occurrence_of_A + occurrence_of_B != 
+    if occurrence_of_A + occurrence_of_B != len(skus):
+        return -1
 
     if occurrence_of_A % 3 == 0:
         total_checkout += 130 * occurrence_of_A/3
@@ -25,5 +26,3 @@ def checkout(skus):
         total_checkout += checkout((occurrence_of_B-1)*'B') + 30
 
     return total_checkout
-
-print(checkout(''))
