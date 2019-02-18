@@ -7,7 +7,7 @@ def checkout(skus):
     item = {'A': 50, 'B': 30, 'C': 20, 'D': 15}
 
     if not skus:
-        return -1
+        return 0
 
     for sku in skus:
         if sku in item.keys():
@@ -16,6 +16,7 @@ def checkout(skus):
             return -1
 
     return sum(total_checkout)
+
 
 
 
