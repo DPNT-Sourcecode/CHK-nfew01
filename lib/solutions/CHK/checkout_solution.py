@@ -30,5 +30,3 @@ def checkout(skus):
     total_checkout += (occurrence_of_C * 20) + (occurrence_of_D * 15)
 
     return total_checkout
-
-print(checkout('ABCDCBAABCABBAAA'))
