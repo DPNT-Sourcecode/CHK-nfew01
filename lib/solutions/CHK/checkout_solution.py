@@ -27,12 +27,8 @@ def checkout(skus):
     else:
         total_checkout += checkout((occurrence_of_B-1)*'B') + 30
 
-    if 'C' in skus:
-        total_checkout += 20
-
-    if 'D' in skus:
-        total_checkout += 15
+    total_checkout += (occurrence_of_C * 20) + (occurrence_of_D * 15)
 
     return total_checkout
 
-print(checkout('ABCDABCD'))
+print(checkout('ABCDCBAABCABBAAA'))
